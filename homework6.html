@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>人物介绍</title>
+	<link rel="stylesheet" type="text/css" href="css3/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css3/htmleaf-demo.css">
+    <link rel="stylesheet" href="css3/style.css">
+
+</head>
+<body>
+	<div class="slider__warpper">
+		  <div class="flex__container flex--pikachu flex--active" data-slide="1">
+		    <div class="flex__item flex__item--left">
+		      <div class="flex__content">
+		        <h1 class="text--big">寄叶二号B型</h1>
+		        <p class="text--normal">冷静的意志之刃，作为人形机械兵部队【寄叶】的一员被派遣，战斗通用性的人工智能，既能用剑近距离攻击，也能利用支援系统【pod】进行远程攻击。因为装备着战斗用眼罩，所以几乎看不到她的眼神，寄叶部队成员没有名字 全部用代号称呼，虽然原则上禁止拥有感情，但是因为个体差异，2B有着沉着冷静的性格。</p>
+		      </div>
+		      <h2><a href="homework2.html">返回</a></h2>
+		      <p class="text__background">NieR:Automata</p>
+		    </div>
+		    <div class="flex__item flex__item--right"></div>
+		    <img class="pokemon__img" src="rua/2017021551627417.png" />
+		  </div>
+		  <div class="flex__container flex--piplup animate--start" data-slide="2">
+		    <div class="flex__item flex__item--left">
+		      <div class="flex__content">
+		        <h1 class="text--big">寄叶9号S型</h1>
+		        <p class="text--normal">脆弱温柔之魂，性格温柔。虽然没有攻击机能 但在调查任务方面强化了的机体，作为黑客在情报收集方面见长的寄叶部队的一员，在寄叶部队中是感情表现比较丰富的类型。</p>
+		      </div>
+		      <h2><a href="homework2.html">返回</a></h2>
+		      <p class="text__background">NieR:Automata</p>
+		    </div>
+		    <div class="flex__item flex__item--right"></div>
+		    <img class="pokemon__img" src="rua/2017021551628849.png" />
+		  </div>
+		  <div class="flex__container flex--blaziken animate--start" data-slide="3">
+		    <div class="flex__item flex__item--left">
+		      <div class="flex__content">
+		        <h1 class="text--big">寄叶A型二号</h1>
+		        <p class="text--normal">过去与憎恶之涡?A型在现在的机体没有运用的近身攻击方面强化了，作为寄叶部队的原型体(实验体)，为了2B与9S等正式体的实用化而被使用。寡言少语的性格，经常独自行动。</p>
+		      </div>
+		      <h2><a href="homework2.html">返回</a></h2>
+		      <p class="text__background">NieR:Automata</p>
+		    </div>
+		    <div class="flex__item flex__item--right"></div>
+		    <img class="pokemon__img" src="rua/2017021551634777.png" />
+		  </div>
+		  <div class="flex__container flex--dialga animate--start" data-slide="4">
+		    <div class="flex__item flex__item--left">
+		      <div class="flex__content">
+		        <h1 class="text--big">寄叶部队司令</h1>
+		        <p class="text--normal">负责指挥寄叶全队，虽然立场上沉着冷静地行动，但是好像在意着2B和9S。
+              似乎与寄叶部队的原型体A2有什么关系。</p>
+		      </div>
+		      <h2><a href="homework2.html">返回</a></h2>
+		      <p class="text__background">NieR:Automata</p>
+		    </div>
+		    <div class="flex__item flex__item--right"></div>
+		    <img class="pokemon__img" src="rua/2017021551641890.png" />
+		  </div>
+		  <div class="flex__container flex--zekrom animate--start" data-slide="5">
+		    <div class="flex__item flex__item--left">
+		      <div class="flex__content">
+		        <h1 class="text--big">银莲花</h1>
+		        <p class="text--normal">比尤尔哈部队更早到达地球，领导着抵抗军在各地持续奋斗，是抵抗军的队长。　性格温和，为同伴着想，给主角透露了许多有益的消息</p>
+		      </div>
+		      <h2><a href="homework2.html">返回</a></h2>
+		      <p class="text__background">NieR:Automata</p>
+		    </div>
+		    <div class="flex__item flex__item--right"></div>
+		    <img class="pokemon__img" src="rua/2017021552535584.png" />
+		  </div>
+		</div>
+
+		<div class="slider__navi">
+		  <a href="#" class="slide-nav active" data-slide="1">pikachu</a>
+		  <a href="#" class="slide-nav" data-slide="2">piplup</a>
+		  <a href="#" class="slide-nav" data-slide="3">blaziken</a>
+		  <a href="#" class="slide-nav" data-slide="4">dialga</a>
+		  <a href="#" class="slide-nav" data-slide="5">zekrom</a>
+		</div>
+	
+	<script src="js3/jsrua.js" type="text/javascript"></script>
+	<script>window.jQuery || document.write('<script src="js3/jquery-2.1.1.min.js"><\/script>')</script>
+	<script type="text/javascript">
+		$('.slide-nav').on('click', function(e) {
+		  e.preventDefault();
+		  // get current slide
+		  var current = $('.flex--active').data('slide'),
+		    // get button data-slide
+		    next = $(this).data('slide');
+
+		  $('.slide-nav').removeClass('active');
+		  $(this).addClass('active');
+
+		  if (current === next) {
+		    return false;
+		  } else {
+		    $('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
+		    $('.flex--active').addClass('animate--end');
+		    setTimeout(function() {
+		      $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
+		      $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
+		    }, 800);
+		  }
+		});
+	</script>
+	 
+</body>
+</html>
